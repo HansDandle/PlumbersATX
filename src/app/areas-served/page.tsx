@@ -1,4 +1,4 @@
-"use client";
+// ...removed 'use client' to allow metadata export...
 import Link from 'next/link';
 import { SITE_NAME, CITY, PHONE_NUMBER } from '@/lib/constants';
 

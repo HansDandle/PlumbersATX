@@ -1,4 +1,4 @@
-"use client";
+// ...removed 'use client' to allow metadata export...
 import { SITE_NAME } from '@/lib/constants';
 
 export const metadata = {

@@ -1,12 +1,13 @@
-"use client";
 import Link from 'next/link';
 import Image from 'next/image';
 import { SITE_NAME, CITY, PHONE_NUMBER } from '@/lib/constants';
 
+export const metadata = {
   title: `About ${SITE_NAME} | Plumbing Lead Generation in ${CITY}`,
   description: `${SITE_NAME} is a lead generation service connecting people in ${CITY} with independent local plumbers. Learn how we work.`,
 };
 
+export default function AboutPage() {
   return (
     <>
       <section className="hero">

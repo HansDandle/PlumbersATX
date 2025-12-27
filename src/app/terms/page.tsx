@@ -11,25 +11,26 @@ export default function TermsPage() {
     <>
       <section className="hero">
         <span className="text-5xl mb-2">📄</span>
-        <h1 className="text-3xl sm:text-4xl font-extrabold mb-2 text-blue-800 drop-shadow">Terms of Service</h1>
-        <p className="text-lg text-blue-900 mb-4">By using {SITE_NAME}'s website, you agree to our terms of service. Our services are provided as-is and without warranty.</p>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-blue-900">Terms of Service</h1>
+        <p className="text-lg text-gray-800 mb-4">By using {SITE_NAME}, you agree to our terms. We do our best to provide helpful information and connect you with local plumbers, but we can’t guarantee every detail is perfect.</p>
+        <div className="text-sm text-gray-700 mt-2">If you have questions, just ask. We’re here to help, not to sell.</div>
       </section>
-      <div className="callout">We strive for accuracy but cannot guarantee all information is current or error-free. Use our site at your own risk.</div>
+      <div className="callout bg-[#f7f6f3] border rounded p-4 my-4 text-gray-800">We strive for accuracy but can’t guarantee all information is current or error-free. Please use our site as a helpful resource, not a substitute for professional advice.</div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
-        <li className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border-t-4 border-blue-400">
+        <li className="bg-[#f7f6f3] rounded border p-6 flex flex-col items-center text-center">
           <span className="text-2xl mb-1">⚠️</span>
           <span className="font-bold text-lg mb-1">Use at your own risk</span>
         </li>
-        <li className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border-t-4 border-blue-400">
+        <li className="bg-[#f7f6f3] rounded border p-6 flex flex-col items-center text-center">
           <span className="text-2xl mb-1">ℹ️</span>
           <span className="font-bold text-lg mb-1">Informational content</span>
         </li>
-        <li className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border-t-4 border-blue-400">
+        <li className="bg-[#f7f6f3] rounded border p-6 flex flex-col items-center text-center">
           <span className="text-2xl mb-1">❓</span>
           <span className="font-bold text-lg mb-1">Contact us with questions</span>
         </li>
       </ul>
-      <div className="callout">For more information, please <a href="/contact" className="text-blue-700 underline">contact us</a>.</div>
+      <div className="callout bg-[#f7f6f3] border rounded p-4 my-4 text-gray-800">For more information, please <a href="/contact" className="text-blue-700 underline">contact us</a>. We’re happy to listen and answer.</div>
     </>
   );
 }

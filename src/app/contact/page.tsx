@@ -33,13 +33,14 @@ export default function ContactPage() {
     <>
       <section className="hero">
         <span className="text-5xl mb-2">📞</span>
-        <h1 className="text-3xl sm:text-4xl font-extrabold mb-2 text-blue-800 drop-shadow">Contact {SITE_NAME}</h1>
-        <p className="text-lg text-blue-900 mb-4">Call us at <a href={`tel:${PHONE_NUMBER}`} className="text-blue-700 underline">{PHONE_NUMBER}</a> or use the form below.</p>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-blue-900">Contact {SITE_NAME}</h1>
+          <p className="text-lg text-gray-800 mb-4">Call us at <a href={`tel:${PHONE_NUMBER}`} className="text-blue-700 underline">{PHONE_NUMBER}</a> or use the form below. We’re here to listen and help you find the right support.</p>
+          <div className="text-sm text-gray-700 mt-2">No pressure, just caring help for Austin homeowners.</div>
       </section>
       <div className="callout">We respond quickly to all inquiries. Your information is kept private and never shared.</div>
       <div className="flex justify-center">
         {submitted ? (
-          <div className="p-6 bg-green-100 border border-green-300 rounded-xl shadow max-w-md w-full text-center font-semibold text-green-900">Thank you! Your message has been received.</div>
+            <div className="p-6 bg-[#f7f6f3] border border-green-300 rounded-xl shadow max-w-md w-full text-center font-semibold text-green-900">Thank you! We’ve received your message and will reach out with care.</div>
         ) : (
           <form className="bg-white rounded-xl shadow p-8 max-w-md w-full space-y-6 border-t-4 border-blue-400" onSubmit={handleSubmit} noValidate>
             <div>

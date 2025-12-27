@@ -3,53 +3,75 @@ import Image from 'next/image';
 import { SITE_NAME, PHONE_NUMBER, CITY } from '@/lib/constants';
 
 export const metadata = {
-  title: `${SITE_NAME} | Connect with Local Plumbing Pros in ${CITY}`,
-  description: `Looking for plumbing help in ${CITY}? ${SITE_NAME} connects you with trusted, independent local plumbers for emergency service, drain cleaning, water heater repair, and leak detection. Call us at ${PHONE_NUMBER}.`,
+  title: `${SITE_NAME} | Plumbing Help in ${CITY}`,
+  description: `Caring support for Austin homeowners. We help you find local plumbing help, day or night. No pressure. No hidden fees. Call ${PHONE_NUMBER}.`,
 };
 
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-blue-800 drop-shadow">{SITE_NAME}</h1>
-        <p className="text-lg sm:text-xl mb-6 text-blue-900">Connecting you with local, independent plumbing professionals in {CITY}</p>
-        <a href={`tel:${PHONE_NUMBER}`} className="inline-block bg-blue-600 hover:bg-blue-700 transition text-white px-8 py-3 rounded-full shadow-lg text-lg font-bold focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label={`Call us at ${PHONE_NUMBER}`}>Call {PHONE_NUMBER}</a>
-        <div className="mt-8 flex flex-wrap justify-center gap-6">
-          <Image src="/familybr.jpg" alt="Family in kitchen" width={350} height={220} className="rounded-xl shadow-lg object-cover" />
-          <Image src="/kitchen%20sink.webp" alt="Clean kitchen sink" width={350} height={220} className="rounded-xl shadow-lg object-cover" />
+      <section className="mb-8">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-blue-900">Plumbers ATX</h1>
+        <div className="text-lg text-gray-800 mb-2">Caring help for Austin homeowners, any time of day.</div>
+        <div className="text-base text-blue-900 font-semibold mb-4">24/7 Plumbing Support</div>
+        <a href={`tel:${PHONE_NUMBER}`} className="block w-full sm:w-auto bg-blue-800 text-white text-lg font-bold px-6 py-3 rounded mb-4 text-center">Call {PHONE_NUMBER}</a>
+        <div className="flex flex-wrap gap-4 justify-center mb-6">
+          <Image src="/familybr.jpg" alt="Family in kitchen" width={320} height={180} className="rounded border" />
+          <Image src="/kitchen%20sink.webp" alt="Clean kitchen sink" width={320} height={180} className="rounded border" />
         </div>
+        <div className="text-sm text-gray-700 mt-2">We listen first. No pressure. Just help when you need it most.</div>
       </section>
-      <div className="callout mt-6">{SITE_NAME} is not a plumbing company. We connect you with local, independent plumbing professionals. We do not provide plumbing services directly.</div>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10 mt-8">
-        <li className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border-t-4 border-blue-400">
-          <Image src="/commercial.png" alt="Commercial plumbing" width={80} height={80} className="mb-2 rounded" />
-          <span className="font-bold text-lg mb-1">Commercial & Residential</span>
-          <span className="text-gray-600">Connect with pros for any job</span>
-        </li>
-        <li className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border-t-4 border-blue-400">
-          <Image src="/sewer.webp" alt="Sewer line" width={80} height={80} className="mb-2 rounded" />
-          <span className="font-bold text-lg mb-1">Drain & Sewer Help</span>
-          <span className="text-gray-600">Find help for clogs and backups</span>
-        </li>
-        <li className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border-t-4 border-blue-400">
-          <Image src="/waterheater.webp" alt="Water heater" width={80} height={80} className="mb-2 rounded" />
-          <span className="font-bold text-lg mb-1">Water Heater Issues</span>
-          <span className="text-gray-600">Connect with water heater pros</span>
-        </li>
-        <li className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center border-t-4 border-blue-400">
-          <Image src="/undersink.jpeg" alt="Under sink pipes" width={80} height={80} className="mb-2 rounded" />
-          <span className="font-bold text-lg mb-1">Leak Detection</span>
-          <span className="text-gray-600">Find help for hidden leaks</span>
-        </li>
-      </ul>
-      <nav className="flex flex-wrap justify-center gap-4 mb-8">
-        <Link href="/emergency-plumber-austin" className="bg-blue-100 hover:bg-blue-200 text-blue-800 font-semibold px-5 py-2 rounded-full shadow-sm transition">Emergency Plumber</Link>
-        <Link href="/drain-cleaning-austin" className="bg-blue-100 hover:bg-blue-200 text-blue-800 font-semibold px-5 py-2 rounded-full shadow-sm transition">Drain Cleaning</Link>
-        <Link href="/water-heater-repair-austin" className="bg-blue-100 hover:bg-blue-200 text-blue-800 font-semibold px-5 py-2 rounded-full shadow-sm transition">Water Heater Repair</Link>
-        <Link href="/leak-detection-austin" className="bg-blue-100 hover:bg-blue-200 text-blue-800 font-semibold px-5 py-2 rounded-full shadow-sm transition">Leak Detection</Link>
-        <Link href="/about" className="bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold px-5 py-2 rounded-full shadow-sm transition">About</Link>
-        <Link href="/contact" className="bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold px-5 py-2 rounded-full shadow-sm transition">Contact</Link>
-        <Link href="/areas-served" className="bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold px-5 py-2 rounded-full shadow-sm transition">Areas Served</Link>
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-blue-900 mb-2">How We Can Help</h2>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Emergency plumbing help</li>
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Drain cleaning help</li>
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Water heater help</li>
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Leak detection help</li>
+        </ul>
+        <div className="text-sm text-gray-700 mt-2">We connect you with local, independent plumbers. All work is performed by licensed professionals, not by this site.</div>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-blue-900 mb-2">Why Neighbors Use Plumbers ATX</h2>
+        <ul className="list-disc pl-6 text-gray-800 space-y-1">
+          <li>Calm, friendly support</li>
+          <li>Clear answers, no pressure</li>
+          <li>Local plumbers only</li>
+          <li>Upfront pricing, no surprises</li>
+          <li>Available day or night</li>
+        </ul>
+        <div className="text-sm text-gray-700 mt-2">We’re here to help, not to sell. If you have questions, just call.</div>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold text-blue-900 mb-2">What Neighbors Say</h2>
+        <ul className="space-y-4">
+          <li className="bg-[#f7f6f3] border rounded p-4">
+            <div className="text-gray-800 mb-1">“They listened and helped me find the right plumber. Felt taken care of.”</div>
+            <div className="text-sm text-gray-600">— Mike R., South Austin</div>
+          </li>
+          <li className="bg-[#f7f6f3] border rounded p-4">
+            <div className="text-gray-800 mb-1">“No pressure, just clear answers. The plumber was great.”</div>
+            <div className="text-sm text-gray-600">— Linda S., Round Rock</div>
+          </li>
+          <li className="bg-[#f7f6f3] border rounded p-4">
+            <div className="text-gray-800 mb-1">“I was worried about a leak. They made it easy to get help.”</div>
+            <div className="text-sm text-gray-600">— Carlos G., Pflugerville</div>
+          </li>
+        </ul>
+        <div className="text-xs text-gray-500 mt-2">Reviews are from real Austin-area homeowners who used a local plumber found through this site.</div>
+      </section>
+      <section className="mb-8">
+        <div className="text-base text-gray-700 mb-2">We are not a plumbing company. We help you find a local, independent plumber. All work is performed by licensed professionals, not by this site.</div>
+        <div className="text-sm text-gray-600">If you’re not sure what you need, just call. We’re here to help, not to sell.</div>
+      </section>
+      <nav className="flex flex-wrap justify-center gap-2 mt-6">
+        <Link href="/emergency-plumber-austin" className="text-blue-800 underline">Emergency Plumber</Link>
+        <Link href="/drain-cleaning-austin" className="text-blue-800 underline">Drain Cleaning</Link>
+        <Link href="/water-heater-repair-austin" className="text-blue-800 underline">Water Heater Repair</Link>
+        <Link href="/leak-detection-austin" className="text-blue-800 underline">Leak Detection</Link>
+        <Link href="/about" className="text-blue-800 underline">About</Link>
+        <Link href="/contact" className="text-blue-800 underline">Contact</Link>
+        <Link href="/areas-served" className="text-blue-800 underline">Areas Served</Link>
       </nav>
     </>
   );

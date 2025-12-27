@@ -11,23 +11,37 @@ export default function HomePage() {
   return (
     <>
       <section className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-blue-900">Plumbers ATX</h1>
-        <div className="text-lg text-gray-800 mb-2">Caring help for Austin homeowners, any time of day.</div>
-        <div className="text-base text-blue-900 font-semibold mb-4">24/7 Plumbing Support</div>
+        <div className="flex flex-wrap gap-4 justify-center mb-4">
+          <Image src="/vancartoon.jpg" alt="Plumbers van cartoon" width={340} height={180} className="rounded border" />
+        </div>
+        <div className="flex items-center justify-center gap-3 mb-2">
+          <Image src="/logo.jpg" alt="Plumbers ATX logo" width={48} height={48} className="rounded" />
+          <div className="text-2xl sm:text-4xl font-bold text-blue-900 tracking-tight">Plumbers ATX</div>
+        </div>
+        <div className="text-lg text-gray-800 mb-2 text-center">Caring help for Austin homeowners, any time of day.</div>
+        <div className="text-base text-blue-900 font-semibold mb-4 text-center">24/7 Plumbing Support</div>
         <a href={`tel:${PHONE_NUMBER}`} className="block w-full sm:w-auto bg-blue-800 text-white text-lg font-bold px-6 py-3 rounded mb-4 text-center">Call {PHONE_NUMBER}</a>
         <div className="flex flex-wrap gap-4 justify-center mb-6">
           <Image src="/familybr.jpg" alt="Family in kitchen" width={320} height={180} className="rounded border" />
           <Image src="/kitchen%20sink.webp" alt="Clean kitchen sink" width={320} height={180} className="rounded border" />
         </div>
-        <div className="text-sm text-gray-700 mt-2">We listen first. No pressure. Just help when you need it most.</div>
+        <div className="text-sm text-gray-700 mt-4 text-center">We listen first. No pressure. Just help when you need it most.</div>
       </section>
       <section className="mb-8">
         <h2 className="text-xl font-semibold text-blue-900 mb-2">How We Can Help</h2>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Emergency plumbing help</li>
-          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Drain cleaning help</li>
-          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Water heater help</li>
-          <li className="bg-[#f7f6f3] border rounded p-4 text-center">Leak detection help</li>
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">
+            <Link href="/emergency-plumber-austin" className="text-blue-800 font-semibold underline">Emergency plumbing help</Link>
+          </li>
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">
+            <Link href="/drain-cleaning-austin" className="text-blue-800 font-semibold underline">Drain cleaning help</Link>
+          </li>
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">
+            <Link href="/water-heater-repair-austin" className="text-blue-800 font-semibold underline">Water heater help</Link>
+          </li>
+          <li className="bg-[#f7f6f3] border rounded p-4 text-center">
+            <Link href="/leak-detection-austin" className="text-blue-800 font-semibold underline">Leak detection help</Link>
+          </li>
         </ul>
         <div className="text-sm text-gray-700 mt-2">We connect you with local, independent plumbers. All work is performed by licensed professionals, not by this site.</div>
       </section>
@@ -63,6 +77,9 @@ export default function HomePage() {
       <section className="mb-8">
         <div className="text-base text-gray-700 mb-2">We are not a plumbing company. We help you find a local, independent plumber. All work is performed by licensed professionals, not by this site.</div>
         <div className="text-sm text-gray-600">If you’re not sure what you need, just call. We’re here to help, not to sell.</div>
+        <div className="flex flex-wrap gap-4 justify-center mt-6">
+          <Image src="/rockplumbers.jpg" alt="Austin rock plumbers group photo" width={340} height={180} className="rounded border" />
+        </div>
       </section>
       <nav className="flex flex-wrap justify-center gap-2 mt-6">
         <Link href="/emergency-plumber-austin" className="text-blue-800 underline">Emergency Plumber</Link>

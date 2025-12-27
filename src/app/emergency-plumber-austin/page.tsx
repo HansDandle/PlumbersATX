@@ -1,5 +1,6 @@
 // ...removed 'use client' to allow metadata export...
 import Link from 'next/link';
+import Image from 'next/image';
 import { PHONE_NUMBER, SITE_NAME, CITY } from '@/lib/constants';
 
 export const metadata = {
@@ -11,8 +12,13 @@ export default function EmergencyPlumberPage() {
   return (
     <>
       <section className="hero">
-        <span className="text-5xl mb-2">🚨</span>
+        <div className="mb-2 flex justify-center">
+          <Image src="/logo.jpg" alt="Plumbers ATX logo" width={80} height={80} className="rounded" />
+        </div>
         <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-blue-900">Emergency Plumbing Help in {CITY}</h1>
+        <div className="flex flex-wrap gap-4 justify-center mb-4">
+          <Image src="/familybr.jpg" alt="Family in kitchen feeling reassured" width={320} height={180} className="rounded border bg-[#f7f6f3]" />
+        </div>
         <p className="text-lg text-gray-800 mb-4">Plumbing emergency? We listen and calmly connect you with a local plumber, day or night. No pressure, just help when you need it most.</p>
         <a href={`tel:${PHONE_NUMBER}`} className="inline-block bg-blue-800 text-white px-8 py-3 rounded text-lg font-bold">Call {PHONE_NUMBER}</a>
         <div className="text-sm text-gray-700 mt-2">If you’re worried, just call. We’re here to help, not to sell.</div>

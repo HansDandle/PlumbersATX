@@ -68,7 +68,7 @@ export default function HomePage() {
             <div className="text-sm text-gray-600">— Linda S., Round Rock</div>
           </li>
           <li className="bg-[#f7f6f3] border rounded p-4">
-            <div className="text-gray-800 mb-1">“I was worried about a leak. They made it easy to get help.”</div>
+            <div className="text-gray-800 mb-1">“I called these guys because the sh*t was about to hit the fan, literally. They had someone out before my wife caught a whiff of it, thanks almighty!</div>
             <div className="text-sm text-gray-600">— Carlos G., Pflugerville</div>
           </li>
         </ul>
